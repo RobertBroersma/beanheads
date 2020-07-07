@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "workspaces": [
+    "site",
+    "core",
+    "site/functions"
+  ]
+}
