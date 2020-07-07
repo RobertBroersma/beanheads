@@ -1,6 +1,6 @@
-<div style="text-align:center">
+<p align="center" >
   <img alt="Big Heads Demo" src="demo/demo.gif" />
-</div>
+</p>
 
 Easily generate avatars for your projects with Big Heads. https://bigheads.io
 
