@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  @apply font-sans;
+}
+
+.underline-blue {
+  text-decoration-color: #63b3ed;
+}
+
+.underline-blue:hover {
+  color: #4299e1;
+  text-decoration-color: #4299e1;
+}

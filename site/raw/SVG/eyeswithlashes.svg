@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+    <g id="face">
+        <path d="M273,575.53c-1-28.36,18-52.36,43.28-63.57a64.37,64.37,0,0,1,8.16-2.69A70,70,0,0,1,366.69,512a68.79,68.79,0,0,1,8.92,4.16C405.14,532,418.4,569.36,407,599.57a59.6,59.6,0,0,1-4.18,8.82,63,63,0,0,1-4.71,7.79,50.49,50.49,0,0,1-12.8,13,65.74,65.74,0,0,1-7.85,5c-27.38,13-64.38,9-86.44-11.39a68,68,0,0,1-6.11-7.47,65,65,0,0,1-5.58-9.5,55.78,55.78,0,0,1-5.72-21.73A75.82,75.82,0,0,1,273,575.53Z" style="fill:#f3ab98"/>
+        <path d="M271.4,557.18c-1-28.36,18-52.36,43.28-63.56a62.37,62.37,0,0,1,8.16-2.7,70,70,0,0,1,42.21,2.68,68.79,68.79,0,0,1,8.92,4.16c29.53,15.88,42.79,53.25,31.36,83.46a59.6,59.6,0,0,1-4.18,8.82,63,63,0,0,1-4.71,7.79,64.89,64.89,0,0,1-5.68,7,64,64,0,0,1-7.12,6.06,65.74,65.74,0,0,1-7.85,5c-27.38,13-64.38,9-86.44-11.39a69.13,69.13,0,0,1-6.11-7.47,65,65,0,0,1-5.58-9.5A55.59,55.59,0,0,1,272,565.75,71.44,71.44,0,0,1,271.4,557.18Z" style="fill:#fff;stroke:#592d3d;stroke-miterlimit:10;stroke-width:12px"/>
+        <circle cx="340.14" cy="557.78" r="12.24" style="fill:#592d3d"/>
+        <line x1="340.14" y1="488.85" x2="340.14" y2="475.11" style="fill:none;stroke:#592d3d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:8px"/>
+        <line x1="353.97" y1="490.25" x2="356.73" y2="476.79" style="fill:none;stroke:#592d3d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:8px"/>
+        <line x1="367.24" y1="494.4" x2="372.64" y2="481.76" style="fill:none;stroke:#592d3d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:8px"/>
+        <line x1="379.4" y1="501.12" x2="387.23" y2="489.83" style="fill:none;stroke:#592d3d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:8px"/>
+        <line x1="325.45" y1="490.43" x2="322.52" y2="477" style="fill:none;stroke:#592d3d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:8px"/>
+        <line x1="312.24" y1="494.75" x2="306.67" y2="482.18" style="fill:none;stroke:#592d3d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:8px"/>
+        <line x1="300.16" y1="501.63" x2="292.19" y2="490.43" style="fill:none;stroke:#592d3d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:8px"/>
+        <path d="M585.52,567.46c.44-15.12,6.67-30.09,15.1-41.32a73.75,73.75,0,0,1,7.12-8.54,69.74,69.74,0,0,1,90.17-8.94,73.16,73.16,0,0,1,6.53,5.12c27,21.46,30.12,63.15,15.32,93.23a61.5,61.5,0,0,1-4.78,6.87A73,73,0,0,1,707.4,622c-20.27,17.83-51.81,22.13-77.4,12.41a70,70,0,0,1-10.56-5c-17.9-10.77-30.37-31.08-33.43-52.22A63,63,0,0,1,585.52,567.46Z" style="fill:#f3ab98"/>
+        <path d="M591,556c.42-14.15,6.42-28.15,14.53-38.66a69.57,69.57,0,0,1,6.85-8,68.48,68.48,0,0,1,93.05-3.57c26,20.07,29,59.07,14.74,87.21a56.61,56.61,0,0,1-4.6,6.43,68.87,68.87,0,0,1-7.29,7.6c-19.5,16.68-49.86,20.7-74.48,11.61a68.38,68.38,0,0,1-10.16-4.7c-17.22-10.08-29.22-29.08-32.17-48.85A57.51,57.51,0,0,1,591,556Z" style="fill:#fff;stroke:#592d3d;stroke-miterlimit:10;stroke-width:12px"/>
+        <circle cx="660.85" cy="557.78" r="12.24" style="fill:#592d3d"/>
+        <line x1="660.24" y1="488.85" x2="660.24" y2="475.11" style="fill:none;stroke:#592d3d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:8px"/>
+        <line x1="674.07" y1="490.25" x2="676.83" y2="476.79" style="fill:none;stroke:#592d3d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:8px"/>
+        <line x1="687.34" y1="494.4" x2="692.74" y2="481.76" style="fill:none;stroke:#592d3d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:8px"/>
+        <line x1="699.51" y1="501.12" x2="707.33" y2="489.83" style="fill:none;stroke:#592d3d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:8px"/>
+        <line x1="645.56" y1="490.43" x2="642.63" y2="477" style="fill:none;stroke:#592d3d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:8px"/>
+        <line x1="632.34" y1="494.75" x2="626.78" y2="482.18" style="fill:none;stroke:#592d3d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:8px"/>
+        <line x1="620.26" y1="501.63" x2="612.29" y2="490.43" style="fill:none;stroke:#592d3d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:8px"/>
+    </g>
+</svg>
