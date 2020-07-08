@@ -105,7 +105,9 @@ const Home = () => {
       <SEO />
       <Hero />
       {typeof window === 'undefined' ? (
-        <div className="text-6xl">Loading...</div>
+        <div className="text-2xl flex justify-center items-center">
+          Loading...
+        </div>
       ) : (
         <div className="px-4">
           <div className="pt-12">
