@@ -6,6 +6,7 @@
   "dependencies": {
     "@bigheads/core": "latest",
     "gatsby": "^2.23.7",
+    "gatsby-plugin-manifest": "^2.4.17",
     "gatsby-plugin-postcss": "^2.3.9",
     "gatsby-plugin-typescript": "^2.4.6",
     "prism-react-renderer": "^1.1.1",

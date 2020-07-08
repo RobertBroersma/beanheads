@@ -9,5 +9,14 @@ module.exports = {
     image: '/card.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@robertbrosma',
   },
-  plugins: ['gatsby-plugin-typescript', 'gatsby-plugin-postcss'],
+  plugins: [
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-postcss',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/favicon.png',
+      },
+    },
+  ],
 }
