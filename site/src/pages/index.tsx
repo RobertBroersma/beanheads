@@ -4,11 +4,9 @@ import { Link } from 'gatsby'
 import { BigHead } from '@bigheads/core'
 import { useInView } from 'react-intersection-observer'
 
-import '../index.css'
 import { Hero } from '../components/Hero'
 import { SEO } from '../components/SEO'
 import { getRandomOptions } from '../utils/getRandomOptions'
-import { colors } from 'core/dist/theme'
 
 const RandomAvatar = () => {
   const options = getRandomOptions()
@@ -100,29 +98,25 @@ const Home = () => {
     <RandomAvatars key={1} page={1} onReachEnd={onReachEnd} />,
   ])
 
+  if (typeof window === 'undefined') {
+    return <SEO />
+  }
+
   return (
     <>
       <SEO />
       <Hero />
-      {typeof window === 'undefined' ? (
-        <div className="text-2xl flex justify-center items-center">
-          Loading...
-        </div>
-      ) : (
-        <div className="px-4">
-          <div className="pt-12">
-            <h1 className="text-4xl font-semibold text-center">
-              More Big Heads
-            </h1>
-            <p className="text-xl text-center">
-              Click on any character to edit, save or embed!
-            </p>
-            <div className="pt-12 flex flex-wrap justify-center container mx-auto">
-              {pages}
-            </div>
+      <div className="px-4">
+        <div className="pt-12">
+          <h1 className="text-4xl font-semibold text-center">More Big Heads</h1>
+          <p className="text-xl text-center">
+            Click on any character to edit, save or embed!
+          </p>
+          <div className="pt-12 flex flex-wrap justify-center container mx-auto">
+            {pages}
           </div>
         </div>
-      )}
+      </div>
     </>
   )
 }

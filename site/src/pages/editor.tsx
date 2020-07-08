@@ -76,7 +76,17 @@ function Editor({ location }: { location: Location }) {
 
   const [activeTab, setActiveTab] = useState<'react' | 'img'>('react')
 
-  const svgUrl = useMemo(() => `/svg?${qs.stringify(props)}`, [props])
+  const svgUrl = useMemo(
+    () =>
+      `/svg?${qs.stringify(
+        Object.entries(props).reduce(
+          (total, [key, value]) =>
+            value === 'false' ? total : { ...total, [key]: value },
+          {},
+        ),
+      )}`,
+    [props],
+  )
 
   const reactCode = `import { BigHead } from '@bigheads/core'
 
@@ -101,6 +111,10 @@ const Example = () => (
   `
 
   const imgCode = `<img src="https://bigheads.io${svgUrl}" alt="Big Head" />`
+
+  if (typeof window === 'undefined') {
+    return <SEO title="Big Head Editor" />
+  }
 
   return (
     <>
