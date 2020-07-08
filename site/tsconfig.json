@@ -10,11 +10,7 @@
     "esModuleInterop": true,
     "noUnusedLocals": false,
     "strictNullChecks": true,
-    "allowJs": true,
-    "baseUrl": "../",
-    "paths": {
-      "@bigheads/core": ["./core"]
-    }
+    "allowJs": true
   },
   "exclude": ["node_modules", "public", ".cache"]
 }
