@@ -36,6 +36,7 @@ export const SEO = ({ title, description, image }: SEOProps) => {
     >
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
+      <meta name="og:type" content="website" />
       {seo.url && <meta property="og:url" content={seo.url} />}
       {seo.title && <meta property="og:title" content={seo.title} />}
       {seo.description && (
