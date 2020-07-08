@@ -5785,6 +5785,13 @@ gatsby-plugin-postcss@^2.3.9:
     "@babel/runtime" "^7.10.3"
     postcss-loader "^3.0.0"
 
+gatsby-plugin-react-helmet@^3.3.9:
+  version "3.3.9"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.3.9.tgz#9d8ac1dc4b2df17500afbbfe4f9ef90bd8e0e467"
+  integrity sha512-V/QJUEsiYNaf95bs8ueHDp6Xk3UonPhs9yi+GURGimZomnT/9ST75Tk7pwZwZmRKQNKC8feklUzLNa3pDqHjUw==
+  dependencies:
+    "@babel/runtime" "^7.10.3"
+
 gatsby-plugin-typescript@^2.4.13, gatsby-plugin-typescript@^2.4.6:
   version "2.4.13"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.4.13.tgz#81208b1cf9e776954b9b7ac64a3f02e39c1e368b"
