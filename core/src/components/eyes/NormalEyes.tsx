@@ -34,10 +34,10 @@ export const NormalEyes = ({ withLashes }: EyeProps) => {
       <circle cx="659.21" cy="550.79" r="12.24" fill={colors.outline} />
 
       {withLashes && (
-        <>
+        <g transform="translate(0 -5)">
           <LeftLash />
           <RightLash />
-        </>
+        </g>
       )}
     </>
   )

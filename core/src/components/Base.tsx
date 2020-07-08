@@ -11,6 +11,7 @@ import { MouthProps } from './mouths/types'
 import { BodyProps } from './bodies/types'
 import { HatProps } from './hats/types'
 import { EyeProps } from './eyes/types'
+import { DressShirt } from './clothing/DressShirt'
 
 interface BaseProps {
   eyes: React.ComponentType<EyeProps>
@@ -83,7 +84,7 @@ export const Base = ({
   } = clothing
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" {...rest}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 990" {...rest}>
       {mask && <Mask id="mask" />}
       <g mask="url(#mask)">
         {mask && <BgCircle circleColor={circleColor} />}
@@ -175,7 +176,12 @@ export const Base = ({
         <BackBody clothingColor={clothingColor} braStraps={braStraps} />
         <ClothingBack color={clothingColor} graphic={Graphic} />
         {!(ClothingFront === Noop && ClothingBack === Noop) && (
-          <FrontBody clothingColor={clothingColor} braStraps={braStraps} />
+          <FrontBody
+            clothingColor={
+              ClothingBack === DressShirt ? 'white' : clothingColor
+            }
+            braStraps={braStraps}
+          />
         )}
         <ClothingFront color={clothingColor} graphic={Graphic} />
         <FacialHair color={hairColor} />

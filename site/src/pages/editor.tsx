@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useMemo } from 'react'
 import qs from 'query-string'
 import startCase from 'lodash/startCase'
-import { Link } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
 import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx'
@@ -24,14 +24,16 @@ import {
   graphicsMap,
   theme,
 } from '@bigheads/core'
-import { Download, Code, Image, ArrowLeft } from 'react-feather'
+import { Download, Code, Image, ArrowLeft, RefreshCw } from 'react-feather'
 import { SEO } from '../components/SEO'
+import { getRandomOptions } from '../utils/getRandomOptions'
 
 type SettingMaps = {
   [key in keyof AvatarProps]: any
 }
 
 const settingMaps: SettingMaps = {
+  mask: { true: 'true', false: 'false' },
   body: bodyMap,
   lipColor: theme.colors.lipColors,
   skinTone: theme.colors.skin,
@@ -46,22 +48,30 @@ const settingMaps: SettingMaps = {
   facialHair: facialHairMap,
   accessory: accessoryMap,
   hat: hatMap,
+  hatColor: theme.colors.clothing,
   lashes: { true: 'true', false: 'false' },
 }
 
-function Editor() {
-  const [props, setProps] = useState<AvatarProps>(
-    qs.parse(typeof window !== 'undefined' ? window.location.search : ''),
+function Editor({ location }: { location: Location }) {
+  const props = useMemo(() => qs.parse(location.search), [location.search])
+
+  const updateProp = useCallback(
+    e => {
+      const name = e.target.name
+      const value = e.target.value
+
+      navigate(
+        `/editor?${qs.stringify({
+          ...props,
+          [name]: value,
+        })}`,
+      )
+    },
+    [props],
   )
 
-  const updateProp = useCallback(e => {
-    const name = e.target.name
-    const value = e.target.value
-
-    setProps(current => ({
-      ...current,
-      [name]: value,
-    }))
+  const randomize = useCallback(() => {
+    navigate(`/editor?${qs.stringify(getRandomOptions())}`)
   }, [])
 
   const [activeTab, setActiveTab] = useState<'react' | 'img'>('react')
@@ -73,7 +83,18 @@ function Editor() {
 const Example = () => (
   <BigHead
     ${Object.entries(props)
-      .map(([key, value]) => `${key}="${value}"`)
+      .map(([key, value]) =>
+        [
+          key,
+          value === 'true'
+            ? undefined
+            : value === 'false'
+            ? '{false}'
+            : `"${value}"`,
+        ]
+          .filter(Boolean)
+          .join('='),
+      )
       .join('\n    ')}
   />
 )
@@ -96,13 +117,24 @@ const Example = () => (
 
           <div className="max-w-xs w-full self-center mt-8">
             {/* @ts-ignore */}
-            <Avatar {...props} lashes={props.lashes === 'true'} />
+            <Avatar
+              {...props}
+              lashes={props.lashes === 'true'}
+              mask={props.mask === 'true'}
+            />
           </div>
 
           <div className="flex flex-col lg:flex-row w-full pt-12">
             <div className="flex-1">
               <h2 className="text-3xl font-semibold uppercase tracking-tight">
-                Settings
+                Settings{' '}
+                <button
+                  onClick={randomize}
+                  className="text-white text-lg bg-indigo-400 hover:bg-indigo-500 font-bold py-2 px-4 rounded inline-flex items-center"
+                >
+                  <RefreshCw className="h-4 w-4 mr-2" />
+                  <span>Random</span>
+                </button>
               </h2>
               {Object.entries(settingMaps).map(([key, map]) => (
                 <div key={key} className="flex items-center mt-4">

@@ -19,7 +19,7 @@ export function Hero() {
           <p className="leading-relaxed text-xl">
             Combine expressions, clothing, hair styles and colors into billions
             of different unique characters. Embed them on your website, use them
-            in your favourite design software, or import them using the React
+            in your favourite design software, or import them from the React
             library!
           </p>
           <p className="text-sm text-gray-600 pt-4 w-full">

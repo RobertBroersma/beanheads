@@ -53,10 +53,10 @@ export const LeftTwitchEyes = ({ withLashes }: EyeProps) => {
       />
 
       {withLashes && (
-        <>
+        <g transform="translate(0 -5)">
           <LeftLash />
           <RightLash />
-        </>
+        </g>
       )}
     </>
   )

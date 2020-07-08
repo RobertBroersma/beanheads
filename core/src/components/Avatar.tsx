@@ -21,6 +21,7 @@ import * as PixieCut from '../components/hair/PixieCut'
 import * as BaldingHair from '../components/hair/BaldingHair'
 import * as BuzzCut from '../components/hair/BuzzCut'
 import * as Afro from '../components/hair/Afro'
+import * as BobCut from '../components/hair/BobCut'
 
 import * as Beanie from '../components/hats/Beanie'
 import * as Turban from '../components/hats/Turban'
@@ -56,6 +57,11 @@ import { HeartEyes } from './eyes/HeartEyes'
 import { OpenMouth } from './mouths/OpenMouth'
 import { SeriousMouth } from './mouths/SeriousMouth'
 import { ReactGraphic } from './clothingGraphic/React'
+import { TinyGlasses } from './accessories/TinyGlasses'
+import { VNeck } from './clothing/VNeck'
+import { GraphQLGraphic } from './clothingGraphic/GraphQL'
+import { Tongue } from './mouths/Tongue'
+import { DressShirt } from './clothing/DressShirt'
 
 export const eyesMap = {
   normal: NormalEyes,
@@ -84,6 +90,7 @@ export const mouthsMap = {
   lips: Lips,
   open: OpenMouth,
   serious: SeriousMouth,
+  tongue: Tongue,
 }
 
 export const hairMap = {
@@ -95,6 +102,7 @@ export const hairMap = {
   balding: BaldingHair,
   buzz: BuzzCut,
   afro: Afro,
+  bob: BobCut,
 }
 
 export const facialHairMap = {
@@ -108,6 +116,8 @@ export const facialHairMap = {
 export const clothingMap = {
   naked: { Back: Noop, Front: Noop },
   shirt: { Back: Shirt, Front: Noop },
+  dressShirt: { Back: DressShirt, Front: Noop },
+  vneck: { Back: VNeck, Front: Noop },
   tankTop: { Back: TankTop, Front: Noop },
   dress: Dress,
 }
@@ -115,6 +125,7 @@ export const clothingMap = {
 export const accessoryMap = {
   none: Noop,
   roundGlasses: RoundGlasses,
+  tinyGlasses: TinyGlasses,
   shades: Shades,
 }
 
@@ -124,6 +135,7 @@ export const graphicsMap = {
   gatsby: GatsbyGraphic,
   vue: VueGraphics,
   react: ReactGraphic,
+  graphQL: GraphQLGraphic,
 }
 
 export const hatMap = {

@@ -1,97 +1,22 @@
 import React, { useEffect, useState, useCallback, useMemo } from 'react'
 import qs from 'query-string'
 import { Link } from 'gatsby'
-import {
-  BigHead,
-  theme,
-  eyesMap,
-  eyebrowsMap,
-  mouthsMap,
-  hairMap,
-  facialHairMap,
-  clothingMap,
-  accessoryMap,
-  graphicsMap,
-  hatMap,
-  bodyMap,
-} from '@bigheads/core'
+import { BigHead } from '@bigheads/core'
 import { useInView } from 'react-intersection-observer'
 
 import '../index.css'
 import { Hero } from '../components/Hero'
 import { SEO } from '../components/SEO'
-
-function selectRandomKey<T extends {}>(object: T) {
-  return (Object.keys(object) as Array<keyof typeof object>)[
-    Math.floor(Math.random() * Object.keys(object).length)
-  ]
-}
+import { getRandomOptions } from '../utils/getRandomOptions'
 
 const RandomAvatar = () => {
-  const skinTone = selectRandomKey(theme.colors.skin)
-  const eyes = selectRandomKey(eyesMap)
-  const eyebrows = selectRandomKey(eyebrowsMap)
-  const mouth = selectRandomKey(mouthsMap)
-  const hair = selectRandomKey(hairMap)
-  const facialHair = selectRandomKey(facialHairMap)
-  const clothing = selectRandomKey(clothingMap)
-  const accessory = selectRandomKey(accessoryMap)
-  const graphic = selectRandomKey(graphicsMap)
-  const hat = selectRandomKey(hatMap)
-  const body = selectRandomKey(bodyMap)
+  const options = getRandomOptions()
 
-  const hairColor = selectRandomKey(theme.colors.hair)
-  const clothingColor = selectRandomKey(theme.colors.clothing)
-  const circleColor = selectRandomKey(theme.colors.bgColors)
-  const lipColor = selectRandomKey(theme.colors.lipColors)
-  const hatColor = selectRandomKey(theme.colors.clothing)
-
-  const mask = true
-  const lashes = Math.random() > 0.5
-
-  const queryString = qs.stringify({
-    skinTone,
-    eyes,
-    eyebrows,
-    mouth,
-    hair,
-    facialHair,
-    clothing,
-    accessory,
-    graphic,
-    hat,
-    body,
-    hairColor,
-    clothingColor,
-    circleColor,
-    lipColor,
-    hatColor,
-    mask,
-    lashes,
-  })
+  const queryString = qs.stringify(options)
 
   return (
     <Link to={`/editor/?${queryString}`} aria-label="Big Head">
-      <BigHead
-        skinTone={skinTone}
-        eyes={eyes}
-        eyebrows={eyebrows}
-        mouth={mouth}
-        hair={hair}
-        facialHair={facialHair}
-        clothing={clothing}
-        accessory={accessory}
-        graphic={graphic}
-        hat={hat}
-        body={body}
-        hairColor={hairColor}
-        clothingColor={clothingColor}
-        circleColor={circleColor}
-        lipColor={lipColor}
-        hatColor={hatColor}
-        mask={mask}
-        lashes={lashes}
-      />
+      <BigHead {...options} />
     </Link>
   )
 }

@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@bigheads/core": "latest",
+    "@bigheads/core": "0.2.0",
     "gatsby": "^2.23.7",
     "gatsby-plugin-postcss": "^2.3.9",
     "gatsby-plugin-typescript": "^2.4.6",
@@ -20,7 +20,8 @@
   "scripts": {
     "dev": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "devDependencies": {
     "@types/react-helmet": "^6.0.0",
