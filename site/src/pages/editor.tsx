@@ -53,7 +53,10 @@ const settingMaps: SettingMaps = {
 }
 
 function Editor({ location }: { location: Location }) {
-  const props = useMemo(() => qs.parse(location.search), [location.search])
+  const props = useMemo(
+    () => (location.search ? qs.parse(location.search) : getRandomOptions()),
+    [location.search],
+  )
 
   const updateProp = useCallback(
     e => {
@@ -119,7 +122,20 @@ const Example = () => (
   return (
     <>
       <SEO title="Big Head Editor" />
-      <div className="px-4 py-12">
+      <a
+        href="https://www.producthunt.com/posts/big-heads?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-big-heads"
+        target="_blank"
+        className="absolute top-0 right-0 mt-2 mr-2"
+      >
+        <img
+          src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=213860&theme=light"
+          alt="Big Heads - Easily generate characters for your projects | Product Hunt Embed"
+          style={{ width: 250, height: 54 }}
+          width="250px"
+          height="54px"
+        />
+      </a>
+      <div className="px-4 py-16 md:py-12">
         <div className="flex flex-col container mx-auto">
           <h1 className="text-4xl font-semibold text-center relative flex flex-col justify-center">
             <Link to="/" className="absolute">
