@@ -44,3 +44,186 @@ const Example = () => (
   />
 )
 ```
+
+### Props
+
+- [`accessory`](#accessory)
+- [`body`](#body)
+- [`circleColor`](#circlecolor)
+- [`clothing`](#clothing)
+- [`clothingColor`](#clothingcolor)
+- [`eyebrows`](#eyebrows)
+- [`eyes`](#eyes)
+- [`facialHair`](#facialhair)
+- [`graphics`](#graphics)
+- [`hair`](#hair)
+- [`hairColor`](#haircolor)
+- [`hat`](#hat)
+- [`lipColor`](#lipcolor)
+- [`mouth`](#mouth)
+- [`size`](#size)
+- [`skinTone`](#skinTone)
+
+# Reference
+
+## Props
+
+### `accessory`
+
+Type of accessory
+
+| Type     | Required |
+| -------- | -------- |
+| enum('none', 'roundGlasses', 'tinyGlasses', 'shades') | No       |
+
+---
+
+### `body`
+
+Type of body
+
+| Type     | Required |
+| -------- | -------- |
+| enum('chest', 'breasts') | No       |
+
+---
+
+### `circleColor`
+
+The color of the circular background
+
+| Type     | Required |
+| -------- | -------- |
+| enum('blue') | No       |
+
+---
+
+### `clothing`
+
+Type of cloth
+
+| Type     | Required |
+| -------- | -------- |
+| enum('naked', 'shirt', 'dressShirt', 'vneck', 'tankTop', 'dress') | No       |
+
+---
+
+### `clothingColor`
+
+The color of the clothes
+
+| Type     | Required |
+| -------- | -------- |
+| enum('white', 'blue', 'black', 'green', 'red') | No       |
+
+---
+
+### `eyebrows`
+
+Type of eyebrows
+
+| Type     | Required |
+| -------- | -------- |
+| enum('raised', 'leftLowered', 'serious', 'angry', 'concerned') | No       |
+
+---
+
+### `eyes`
+
+Type of eyes
+
+| Type     | Required |
+| -------- | -------- |
+| enum('normal', 'leftTwitch', 'happy', 'content', 'squint', 'simple', 'dizzy', 'wink', 'heart') | No       |
+
+---
+
+### `facialHair`
+
+Type of facial hair
+
+| Type     | Required |
+| -------- | -------- |
+| enum('none', 'none2', 'none3', 'stubble', 'mediumBeard') | No       |
+
+---
+
+### `graphics`
+
+Type of graphics over the t-shirts
+
+| Type     | Required |
+| -------- | -------- |
+| enum('none', 'redwood', 'gatsby', 'vue', 'react', 'graphQL') | No       |
+
+---
+
+### `hair`
+
+Type of hair
+
+| Type     | Required |
+| -------- | -------- |
+| enum('none', 'long', 'bun', 'short', 'pixie', 'balding', 'buzz', 'afro', 'bob') | No       |
+
+---
+
+### `hairColor`
+
+The color of the hair
+
+| Type     | Required |
+| -------- | -------- |
+| enum('blonde', 'orange', 'black', 'white', 'brown', 'blue', 'pink') | No       |
+
+----
+
+### `hat`
+
+Type of hat
+
+| Type     | Required |
+| -------- | -------- |
+| enum('none', 'none2', 'none3', 'none4', 'none5', 'beanie', 'turban') | No       |
+
+---
+
+### `lipColor`
+
+The color of the lips
+
+| Type     | Required |
+| -------- | -------- |
+| enum('red', 'purple', 'pink', 'turqoise', 'green') | No       |
+
+---
+
+### `mouth`
+
+Type of mouth
+
+| Type     | Required |
+| -------- | -------- |
+| enum('grin', 'sad', 'openSmile', 'lips', 'open', 'serious', 'tongue') | No       |
+
+---
+
+### `size`
+
+Size of the avatar
+
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| number   | No       | 100     |
+
+---
+
+### `skinTone`
+
+The color of the skin
+
+| Type     | Required |
+| -------- | -------- |
+| enum('light', 'yellow', 'brown', 'dark', 'red', 'black') | No       |
+
+---
