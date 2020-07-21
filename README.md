@@ -55,11 +55,14 @@ const Example = () => (
 - [`eyebrows`](#eyebrows)
 - [`eyes`](#eyes)
 - [`facialHair`](#facialhair)
-- [`graphics`](#graphics)
+- [`graphic`](#graphic)
 - [`hair`](#hair)
 - [`hairColor`](#haircolor)
 - [`hat`](#hat)
+- [`hatColor`](#hatcolor)
+- [`lashes`](#lashes)
 - [`lipColor`](#lipcolor)
+- [`mask`](#mask)
 - [`mouth`](#mouth)
 - [`size`](#size)
 - [`skinTone`](#skinTone)
@@ -148,9 +151,9 @@ Type of facial hair
 
 ---
 
-### `graphics`
+### `graphic`
 
-Type of graphics over the t-shirts
+Type of graphic over the t-shirts
 
 | Type     | Required |
 | -------- | -------- |
@@ -185,6 +188,26 @@ Type of hat
 | Type     | Required |
 | -------- | -------- |
 | enum('none', 'none2', 'none3', 'none4', 'none5', 'beanie', 'turban') | No       |
+
+---
+
+### `hatColor`
+
+The color of the hat
+
+| Type     | Required |
+| -------- | -------- |
+| enum('white', 'blue', 'black', 'green', 'red') | No       |      |
+
+---
+
+### `lashes`
+
+Show lashes
+
+| Type     | Required |
+| -------- | -------- |
+| enum('true', 'false') | No       |
 
 ---
 
