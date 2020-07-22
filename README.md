@@ -64,7 +64,6 @@ const Example = () => (
 - [`lipColor`](#lipcolor)
 - [`mask`](#mask)
 - [`mouth`](#mouth)
-- [`size`](#size)
 - [`skinTone`](#skinTone)
 
 # Reference
