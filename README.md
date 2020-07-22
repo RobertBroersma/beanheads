@@ -221,6 +221,17 @@ The color of the lips
 
 ---
 
+### `mask`
+
+If set to true it displays the avatar in a circle and cuts off everything below it.
+If set to false, it won't display the circle, and won't clip off any of the avatar.
+
+| Type     | Required |
+| -------- | -------- |
+| enum('true', 'false') | No       |
+
+---
+
 ### `mouth`
 
 Type of mouth
