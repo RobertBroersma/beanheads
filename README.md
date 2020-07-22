@@ -242,16 +242,6 @@ Type of mouth
 
 ---
 
-### `size`
-
-Size of the avatar
-
-| Type     | Required | Default |
-| -------- | -------- | ------- |
-| number   | No       | 100     |
-
----
-
 ### `skinTone`
 
 The color of the skin
