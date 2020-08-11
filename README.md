@@ -4,6 +4,8 @@
 
 Easily generate avatars for your projects with Big Heads. https://bigheads.io
 
+<a href="https://www.buymeacoffee.com/robertbroersma" style="height: 51px; width: 217px;" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+
 ### Getting Started
 
 ```shell
