@@ -253,3 +253,6 @@ The color of the skin
 | enum('light', 'yellow', 'brown', 'dark', 'red', 'black') | No       |
 
 ---
+
+# License
+I have made Big Heads icons available for you to incorporate into your products under the MIT License. Feel free to remix and re-share. Id'd love attribution, but it's not required. The only thing I ask is that you not re-sell these icons.
