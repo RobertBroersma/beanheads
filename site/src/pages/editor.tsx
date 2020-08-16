@@ -34,6 +34,8 @@ type SettingMaps = {
 
 const settingMaps: SettingMaps = {
   mask: { true: 'true', false: 'false' },
+  faceMask: { true: 'true', false: 'false' },
+  faceMaskColor: theme.colors.clothing,
   body: bodyMap,
   lipColor: theme.colors.lipColors,
   skinTone: theme.colors.skin,

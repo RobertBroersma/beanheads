@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@bigheads/core": "latest",
+    "@bigheads/core": "*",
     "gatsby": "^2.23.7",
     "gatsby-plugin-manifest": "^2.4.17",
     "gatsby-plugin-postcss": "^2.3.9",

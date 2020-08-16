@@ -177,8 +177,10 @@ export interface AvatarProps {
   circleColor?: keyof typeof colors.bgColors
   lipColor?: keyof typeof colors.lipColors
   hatColor?: keyof typeof colors.clothing
+  faceMaskColor?: keyof typeof colors.clothing
 
   mask?: boolean
+  faceMask?: boolean
   lashes?: boolean
 }
 
@@ -200,8 +202,10 @@ export const Avatar = ({
   circleColor = selectRandomKey(colors.bgColors),
   lipColor = selectRandomKey(colors.lipColors),
   hatColor = selectRandomKey(colors.clothing),
+  faceMaskColor = selectRandomKey(colors.clothing),
 
   mask = true,
+  faceMask = true,
   lashes = Math.random() > 0.5,
 
   ...rest
@@ -238,6 +242,8 @@ export const Avatar = ({
         circleColor={circleColor}
         lipColor={lipColor}
         mask={mask}
+        faceMask={faceMask}
+        faceMaskColor={faceMaskColor}
         lashes={lashes}
         {...rest}
       />

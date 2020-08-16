@@ -12,6 +12,7 @@ import { BodyProps } from './bodies/types'
 import { HatProps } from './hats/types'
 import { EyeProps } from './eyes/types'
 import { DressShirt } from './clothing/DressShirt'
+import { FaceMask } from './FaceMask'
 
 interface BaseProps {
   eyes: React.ComponentType<EyeProps>
@@ -44,8 +45,10 @@ interface BaseProps {
   circleColor: keyof typeof colors.bgColors
   lipColor: keyof typeof colors.lipColors
   hatColor: keyof typeof colors.clothing
+  faceMaskColor: keyof typeof colors.clothing
 
   mask: boolean
+  faceMask: boolean
   lashes: boolean
 }
 
@@ -66,8 +69,10 @@ export const Base = ({
   circleColor,
   lipColor,
   hatColor,
+  faceMaskColor,
 
   mask,
+  faceMask,
   lashes,
 
   ...rest
@@ -184,9 +189,10 @@ export const Base = ({
           />
         )}
         <ClothingFront color={clothingColor} graphic={Graphic} />
-        <FacialHair color={hairColor} />
+        {!faceMask && <FacialHair color={hairColor} />}
         <Eyes withLashes={lashes} />
         <Mouth lipColor={lipColor} />
+        {faceMask && <FaceMask color={faceMaskColor} />}
         <FrontHair hairColor={hairColor} hasHat={FrontHat !== Noop} />
         <Eyebrows />
         <FrontHat color={hatColor} scale={hatScale} />

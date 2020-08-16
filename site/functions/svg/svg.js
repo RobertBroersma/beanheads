@@ -39,8 +39,10 @@ function getRandomOptions(rng) {
   const circleColor = selectRandomKey(theme.colors.bgColors)
   const lipColor = selectRandomKey(theme.colors.lipColors)
   const hatColor = selectRandomKey(theme.colors.clothing)
+  const faceMaskColor = selectRandomKey(theme.colors.clothing)
 
   const mask = true
+  const faceMask = true
   const lashes = rng() > 0.5
 
   return {
@@ -60,7 +62,9 @@ function getRandomOptions(rng) {
     circleColor,
     lipColor,
     hatColor,
+    faceMaskColor,
     mask,
+    faceMask,
     lashes,
   }
 }
@@ -68,7 +72,17 @@ function getRandomOptions(rng) {
 // Docs on event and context https://www.netlify.com/docs/functions/#the-handler-method
 exports.handler = async event => {
   try {
-    const { seed, ...props } = event.queryStringParameters
+    let { seed, ...props } = event.queryStringParameters
+
+    for (let [key, value] of Object.entries(props)) {
+      if (value === 'false') {
+        props[key] = false
+      }
+
+      if (value === 'true') {
+        props[key] = true
+      }
+    }
 
     const rng = seed ? seedrandom(seed) : Math.random
 
