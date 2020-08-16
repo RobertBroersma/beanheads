@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@bigheads/core": "0.3.0",
+    "@bigheads/core": "latest",
     "seedrandom": "^3.0.5"
   }
 }
