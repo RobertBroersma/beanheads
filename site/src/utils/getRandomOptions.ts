@@ -36,8 +36,10 @@ export function getRandomOptions() {
   const circleColor = selectRandomKey(theme.colors.bgColors)
   const lipColor = selectRandomKey(theme.colors.lipColors)
   const hatColor = selectRandomKey(theme.colors.clothing)
+  const faceMaskColor = selectRandomKey(theme.colors.clothing)
 
   const mask = true
+  const faceMask = true
   const lashes = Math.random() > 0.5
 
   return {
@@ -57,7 +59,9 @@ export function getRandomOptions() {
     circleColor,
     lipColor,
     hatColor,
+    faceMaskColor,
     mask,
+    faceMask,
     lashes,
   }
 }

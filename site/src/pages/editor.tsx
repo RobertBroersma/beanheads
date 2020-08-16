@@ -85,8 +85,7 @@ function Editor({ location }: { location: Location }) {
     () =>
       `/svg?${qs.stringify(
         Object.entries(props).reduce(
-          (total, [key, value]) =>
-            value === 'false' ? total : { ...total, [key]: value },
+          (total, [key, value]) => ({ ...total, [key]: value }),
           {},
         ),
       )}`,
@@ -139,6 +138,7 @@ const Example = () => (
               {...props}
               lashes={props.lashes === 'true'}
               mask={props.mask === 'true'}
+              faceMask={props.faceMask === 'true'}
             />
           </div>
 
