@@ -45,6 +45,7 @@ const Example = () => (
     lashes="false"
     lipColor="purple"
     mask="true"
+    faceMask="true"
     mouth="open"
     skinTone="brown"
   />
@@ -69,6 +70,7 @@ const Example = () => (
 - [`lashes`](#lashes)
 - [`lipColor`](#lipcolor)
 - [`mask`](#mask)
+- [`faceMask`](#faceMask)
 - [`mouth`](#mouth)
 - [`skinTone`](#skinTone)
 
@@ -233,7 +235,17 @@ If set to false, it won't display the circle, and won't clip off any of the avat
 
 | Type     | Required |
 | -------- | -------- |
-| enum('true', 'false') | No       |
+| boolean | No       |
+
+---
+
+### `faceMask`
+
+If set to true the avatar will be wearing a face mask
+
+| Type     | Required |
+| -------- | -------- |
+| boolean | No       |
 
 ---
 
