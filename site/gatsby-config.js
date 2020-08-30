@@ -19,5 +19,11 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-176816069-1',
+      },
+    },
   ],
 }
