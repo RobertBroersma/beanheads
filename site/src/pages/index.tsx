@@ -105,6 +105,27 @@ const Home = () => {
   return (
     <>
       <SEO />
+      <a
+        className="block fixed shadow-lg w-full bg-indigo-500 text-white hover:bg-indigo-600 transition-colors duration-500"
+        href="https://statik.ly"
+        target="_blank"
+      >
+        <div className="container mx-auto text-center py-2 text-lg">
+          <span
+            className="text-3xl align-middle"
+            role="img"
+            aria-label="Announcement"
+          >
+            📣
+          </span>{' '}
+          <span className="font-bold">Statik UI:</span> A modern UI kit by the
+          creator of Big Heads, based on Tailwind CSS
+          <div className="bg-white inline-block rounded text-indigo-500 font-bold px-6 py-2 ml-4">
+            Check it out!
+          </div>
+        </div>
+      </a>
+      <div className="h-12" />
       <Hero />
       <div className="px-4">
         <div className="pt-12">
