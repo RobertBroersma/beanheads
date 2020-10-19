@@ -91,7 +91,7 @@ export const Base = ({
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 990" {...rest}>
       {mask && <Mask id="mask" />}
-      <g mask="url(#mask)">
+      <g mask={mask ? `url(#mask)` : undefined}>
         {mask && <BgCircle circleColor={circleColor} />}
         <BackHat color={hatColor} scale={hatScale} />
         <BackHair hairColor={hairColor} hasHat={FrontHat !== Noop} />

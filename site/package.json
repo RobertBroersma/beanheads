@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@bigheads/core": "latest",
+    "@bigheads/core": "0.3.1",
     "gatsby": "^2.23.7",
     "gatsby-plugin-google-analytics": "^2.3.13",
     "gatsby-plugin-manifest": "^2.4.17",
