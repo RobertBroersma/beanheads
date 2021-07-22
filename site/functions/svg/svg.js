@@ -42,7 +42,7 @@ function getRandomOptions(rng) {
   const faceMaskColor = selectRandomKey(theme.colors.clothing)
 
   const mask = true
-  const faceMask = true
+  const faceMask = false
   const lashes = rng() > 0.5
 
   return {
