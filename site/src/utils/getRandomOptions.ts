@@ -39,7 +39,7 @@ export function getRandomOptions() {
   const faceMaskColor = selectRandomKey(theme.colors.clothing)
 
   const mask = true
-  const faceMask = true
+  const faceMask = false
   const lashes = Math.random() > 0.5
 
   return {

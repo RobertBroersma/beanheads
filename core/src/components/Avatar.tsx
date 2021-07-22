@@ -205,7 +205,7 @@ export const Avatar = ({
   faceMaskColor = selectRandomKey(colors.clothing),
 
   mask = true,
-  faceMask = true,
+  faceMask = false,
   lashes = Math.random() > 0.5,
 
   ...rest

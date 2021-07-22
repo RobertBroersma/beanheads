@@ -105,7 +105,6 @@ const Home = () => {
   return (
     <>
       <SEO />
-      <div className="h-12" />
       <Hero />
       <div className="px-4">
         <div className="pt-12">
