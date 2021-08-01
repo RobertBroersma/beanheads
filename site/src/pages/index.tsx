@@ -107,7 +107,7 @@ const Home = () => {
       <SEO />
       <a
         className="block fixed shadow-lg w-full bg-red-500 text-white hover:bg-red-600 transition-colors duration-500"
-        href="https://statik.ly"
+        href="mailto:robertbroersma@gmail.com"
         target="_blank"
       >
         <div className="container mx-auto text-center py-2 text-lg">
