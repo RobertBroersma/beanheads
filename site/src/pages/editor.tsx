@@ -198,28 +198,28 @@ const Example = () => (
                 <div className="sticky top-0 flex flex-col items-center">
                   <div className="w-full pt-4">
                     <div className="flex">
-                      <button
+                      {/* <button
                         onClick={() => setActiveTab('react')}
                         className="text-white text-lg bg-indigo-400 hover:bg-indigo-500 font-bold py-2 px-4 rounded inline-flex items-center"
                       >
                         <Code className="w-4 h-4 mr-2" />
                         <span>React</span>
-                      </button>
-                      <div className="w-2 h-2" />
-                      <button
+                      </button> */}
+                      {/* <div className="w-2 h-2" /> */}
+                      {/* <button
                         onClick={() => setActiveTab('img')}
                         className="text-white text-lg bg-indigo-400 hover:bg-indigo-500 font-bold py-2 px-4 rounded inline-flex items-center"
                       >
                         <Image className="w-4 h-4 mr-2" />
                         <span>Image</span>
-                      </button>
-                      <div className="w-2 h-2" />
+                      </button> */}
+                      {/* <div className="w-2 h-2" /> */}
                       <button
                         onClick={download}
-                        className="ml-auto text-white text-lg bg-indigo-400 hover:bg-indigo-500 font-bold py-2 px-4 rounded inline-flex items-center"
+                        className="text-white text-lg bg-indigo-400 hover:bg-indigo-500 font-bold py-2 px-4 rounded inline-flex items-center"
                       >
                         <Download className="w-4 h-4 mr-2" />
-                        <span>SVG</span>
+                        <span>Download SVG</span>
                       </button>
                     </div>
 
