@@ -184,69 +184,75 @@ export interface AvatarProps {
   lashes?: boolean
 }
 
-export const Avatar = ({
-  skinTone = selectRandomKey(colors.skin),
-  eyes = selectRandomKey(eyesMap),
-  eyebrows = selectRandomKey(eyebrowsMap),
-  mouth = selectRandomKey(mouthsMap),
-  hair = selectRandomKey(hairMap),
-  facialHair = selectRandomKey(facialHairMap),
-  clothing = selectRandomKey(clothingMap),
-  accessory = selectRandomKey(accessoryMap),
-  graphic = selectRandomKey(graphicsMap),
-  hat = selectRandomKey(hatMap),
-  body = selectRandomKey(bodyMap),
+export const Avatar = React.forwardRef<SVGSVGElement, AvatarProps>(
+  (
+    {
+      skinTone = selectRandomKey(colors.skin),
+      eyes = selectRandomKey(eyesMap),
+      eyebrows = selectRandomKey(eyebrowsMap),
+      mouth = selectRandomKey(mouthsMap),
+      hair = selectRandomKey(hairMap),
+      facialHair = selectRandomKey(facialHairMap),
+      clothing = selectRandomKey(clothingMap),
+      accessory = selectRandomKey(accessoryMap),
+      graphic = selectRandomKey(graphicsMap),
+      hat = selectRandomKey(hatMap),
+      body = selectRandomKey(bodyMap),
 
-  hairColor = selectRandomKey(colors.hair),
-  clothingColor = selectRandomKey(colors.clothing),
-  circleColor = selectRandomKey(colors.bgColors),
-  lipColor = selectRandomKey(colors.lipColors),
-  hatColor = selectRandomKey(colors.clothing),
-  faceMaskColor = selectRandomKey(colors.clothing),
+      hairColor = selectRandomKey(colors.hair),
+      clothingColor = selectRandomKey(colors.clothing),
+      circleColor = selectRandomKey(colors.bgColors),
+      lipColor = selectRandomKey(colors.lipColors),
+      hatColor = selectRandomKey(colors.clothing),
+      faceMaskColor = selectRandomKey(colors.clothing),
 
-  mask = true,
-  faceMask = false,
-  lashes = Math.random() > 0.5,
+      mask = true,
+      faceMask = false,
+      lashes = Math.random() > 0.5,
 
-  ...rest
-}: AvatarProps) => {
-  const skin = colors.skin[skinTone]
+      ...rest
+    },
+    ref,
+  ) => {
+    const skin = colors.skin[skinTone]
 
-  const Eyes = eyesMap[eyes]
-  const Eyebrows = eyebrowsMap[eyebrows]
-  const Mouth = mouthsMap[mouth]
-  const Hair = hairMap[hair]
-  const FacialHair = facialHairMap[facialHair]
-  const Clothing = clothingMap[clothing]
-  const Accessory = accessoryMap[accessory]
-  const Graphic = graphicsMap[graphic]
-  const Hat = hatMap[hat]
-  const Body = bodyMap[body]
+    const Eyes = eyesMap[eyes]
+    const Eyebrows = eyebrowsMap[eyebrows]
+    const Mouth = mouthsMap[mouth]
+    const Hair = hairMap[hair]
+    const FacialHair = facialHairMap[facialHair]
+    const Clothing = clothingMap[clothing]
+    const Accessory = accessoryMap[accessory]
+    const Graphic = graphicsMap[graphic]
+    const Hat = hatMap[hat]
+    const Body = bodyMap[body]
 
-  return (
-    <ThemeContext.Provider value={{ colors, skin }}>
-      <Base
-        eyes={Eyes}
-        eyebrows={Eyebrows}
-        mouth={Mouth}
-        hair={Hair}
-        facialHair={FacialHair}
-        clothing={Clothing}
-        accessory={Accessory}
-        graphic={Graphic}
-        hat={Hat}
-        body={Body}
-        hatColor={hatColor}
-        hairColor={hairColor}
-        clothingColor={clothingColor}
-        circleColor={circleColor}
-        lipColor={lipColor}
-        mask={mask}
-        faceMask={faceMask}
-        faceMaskColor={faceMaskColor}
-        lashes={lashes}
-        {...rest}
-      />
-    </ThemeContext.Provider>
-  )
-}
+    return (
+      <ThemeContext.Provider value={{ colors, skin }}>
+        <Base
+          ref={ref}
+          eyes={Eyes}
+          eyebrows={Eyebrows}
+          mouth={Mouth}
+          hair={Hair}
+          facialHair={FacialHair}
+          clothing={Clothing}
+          accessory={Accessory}
+          graphic={Graphic}
+          hat={Hat}
+          body={Body}
+          hatColor={hatColor}
+          hairColor={hairColor}
+          clothingColor={clothingColor}
+          circleColor={circleColor}
+          lipColor={lipColor}
+          mask={mask}
+          faceMask={faceMask}
+          faceMaskColor={faceMaskColor}
+          lashes={lashes}
+          {...rest}
+        />
+      </ThemeContext.Provider>
+    )
+  },
+)

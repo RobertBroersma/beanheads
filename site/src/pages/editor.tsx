@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useMemo } from 'react'
+import React, { useState, useCallback, useMemo, useRef } from 'react'
 import qs from 'query-string'
 import startCase from 'lodash/startCase'
 import { Link, navigate } from 'gatsby'
@@ -55,7 +55,8 @@ const settingMaps: SettingMaps = {
 }
 
 function Editor({ location }: { location: Location }) {
-  const props = useMemo(
+  const svgRef = useRef<SVGSVGElement>(null)
+  const props = useMemo<AvatarProps>(
     () => (location.search ? qs.parse(location.search) : getRandomOptions()),
     [location.search],
   )
@@ -80,6 +81,18 @@ function Editor({ location }: { location: Location }) {
   }, [])
 
   const [activeTab, setActiveTab] = useState<'react' | 'img'>('react')
+
+  const download = () => {
+    if (!svgRef.current) return
+
+    const svgData = svgRef.current?.outerHTML
+    const svgBlob = new Blob([svgData], { type: 'image/svg+xml;charset=utf-8' })
+    const svgUrl = URL.createObjectURL(svgBlob)
+    const downloadLink = document.createElement('a')
+    downloadLink.href = svgUrl
+    downloadLink.download = 'bighead.svg'
+    downloadLink.click()
+  }
 
   const svgUrl = useMemo(
     () =>
@@ -135,6 +148,7 @@ const Example = () => (
 
           <div className="max-w-xs w-full self-center mt-8">
             <Avatar
+              ref={svgRef}
               {...props}
               lashes={props.lashes === 'true'}
               mask={props.mask === 'true'}
@@ -200,14 +214,13 @@ const Example = () => (
                         <span>Image</span>
                       </button>
                       <div className="w-2 h-2" />
-                      <a
-                        href={svgUrl}
-                        download="bighead.svg"
+                      <button
+                        onClick={download}
                         className="ml-auto text-white text-lg bg-indigo-400 hover:bg-indigo-500 font-bold py-2 px-4 rounded inline-flex items-center"
                       >
                         <Download className="w-4 h-4 mr-2" />
                         <span>SVG</span>
-                      </a>
+                      </button>
                     </div>
 
                     {activeTab === 'react' && (
