@@ -33,9 +33,31 @@ const RandomAvatars = React.memo(
     return useMemo(
       () => (
         <>
-          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-            <RandomAvatar />
-          </div>
+          {page === 1 ? (
+            <a
+              href="https://www.topo.ink"
+              target="_blank"
+              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 pt-5 px-5 opacity-100 hover:opacity-75 transition-opacity duration-300"
+            >
+              <img
+                src="/topoink.png"
+                alt="Topo.ink"
+                className="rounded w-full object-cover object-top"
+                style={{ height: 240 }}
+              />
+              <h2 className="font-bold mt-3 text-lg">
+                Topo.ink{' '}
+                <span className="text-sm text-gray-600 font-normal">
+                  &mdash; Sponsor
+                </span>
+              </h2>
+              <p>Create your own personalized map posters</p>
+            </a>
+          ) : (
+            <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+              <RandomAvatar />
+            </div>
+          )}
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
             <RandomAvatar />
           </div>
