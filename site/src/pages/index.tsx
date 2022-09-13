@@ -35,23 +35,23 @@ const RandomAvatars = React.memo(
         <>
           {page === 1 ? (
             <a
-              href="https://www.topo.ink"
+              href="https://www.etsy.com/shop/StatikGraphics?ref=bigheads.io"
               target="_blank"
               className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 pt-5 px-5 opacity-100 hover:opacity-75 transition-opacity duration-300"
             >
               <img
-                src="/topoink.png"
+                src="/etsy.jpg"
                 alt="Topo.ink"
-                className="rounded w-full object-cover object-top"
+                className="rounded w-full object-contain object-top"
                 style={{ height: 240 }}
               />
-              <h2 className="font-bold mt-3 text-lg">
-                Topo.ink{' '}
+              <h2 className="font-bold mt-3 text-lg text-center">
+                Wall Art on Etsy{' '}
                 <span className="text-sm text-gray-600 font-normal">
                   &mdash; Sponsor
                 </span>
               </h2>
-              <p>Create your own personalized map posters</p>
+              <p className="text-center">High Quality Posters for Your Walls</p>
             </a>
           ) : (
             <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
