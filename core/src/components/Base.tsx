@@ -15,6 +15,8 @@ import { DressShirt } from './clothing/DressShirt'
 import { FaceMask } from './FaceMask'
 
 interface BaseProps {
+  contain?: boolean
+
   eyes: React.ComponentType<EyeProps>
   eyebrows: React.ComponentType
   mouth: React.ComponentType<MouthProps>
@@ -55,6 +57,8 @@ interface BaseProps {
 export const Base = React.forwardRef<SVGSVGElement, BaseProps>(
   (
     {
+      contain = false,
+
       eyes: Eyes,
       eyebrows: Eyebrows,
       mouth: Mouth,
@@ -96,12 +100,12 @@ export const Base = React.forwardRef<SVGSVGElement, BaseProps>(
       <svg
         ref={ref}
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1000 990"
+        viewBox={`0 0 1000 ${ contain ? 1000 : 990 }`}
         {...rest}
       >
-        {mask && <Mask id="mask" />}
+        {mask && <Mask id="mask" contain={contain} />}
         <g mask={mask ? `url(#mask)` : undefined}>
-          {mask && <BgCircle circleColor={circleColor} />}
+          {mask && <BgCircle circleColor={circleColor} contain={contain} />}
           <BackHat color={hatColor} scale={hatScale} />
           <BackHair hairColor={hairColor} hasHat={FrontHat !== Noop} />
           <path
