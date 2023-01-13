@@ -54,6 +54,7 @@ const Example = () => (
 
 ### Props
 
+- [`contain`](#contain)
 - [`accessory`](#accessory)
 - [`body`](#body)
 - [`circleColor`](#circlecolor)
@@ -77,6 +78,14 @@ const Example = () => (
 # Reference
 
 ## Props
+
+### `contain`
+
+Whether to contain the image within the container
+
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| boolean  | No       | false   |
 
 ### `accessory`
 
