@@ -271,3 +271,6 @@ The color of the skin
 
 # License
 I have made Big Heads icons available for you to incorporate into your products under the MIT License. Feel free to remix and re-share for personal or commercial use. I'd love attribution, but it's not required. The only thing I ask is that you not re-sell these icons.
+
+# 💖 We from the Discord community, ⚡ Dispərət Techno are very grateful for the content!
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=900&size=15&pause=1000&vCenter=true&multiline=true&width=435&height=200&lines=We+are+studying+your+video+and+managing+to+build+it%2C;very+grateful+for+the+help%2C+we+are+500+people;grateful+for+the+content!;%E2%9A%A1+Disp%C9%99r%C9%99t+Techno+;https%3A%2F%2Fdiscord.gg%2FQ87eT73pPX" alt="Typing SVG" /></a>
