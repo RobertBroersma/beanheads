@@ -107,8 +107,6 @@ export const hairMap = {
 
 export const facialHairMap = {
   none: Noop,
-  none2: Noop,
-  none3: Noop,
   stubble: StubbleBeard,
   mediumBeard: MediumBeard,
 }
@@ -140,10 +138,6 @@ export const graphicsMap = {
 
 export const hatMap = {
   none: { Front: Noop, Back: Noop },
-  none2: { Front: Noop, Back: Noop },
-  none3: { Front: Noop, Back: Noop },
-  none4: { Front: Noop, Back: Noop },
-  none5: { Front: Noop, Back: Noop },
   beanie: Beanie,
   turban: Turban,
 }
