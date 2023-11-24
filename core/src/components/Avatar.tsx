@@ -111,6 +111,12 @@ export const facialHairMap = {
   mediumBeard: MediumBeard,
 }
 
+export const facialHairMapForRandomGeneration = {
+  ...facialHairMap,
+  none2: Noop,
+  none3: Noop,
+}
+
 export const clothingMap = {
   naked: { Back: Noop, Front: Noop },
   shirt: { Back: Shirt, Front: Noop },
@@ -140,6 +146,14 @@ export const hatMap = {
   none: { Front: Noop, Back: Noop },
   beanie: Beanie,
   turban: Turban,
+}
+
+export const hatMapForRandomGeneration = {
+  ...hatMap,
+  none2: { Front: Noop, Back: Noop },
+  none3: { Front: Noop, Back: Noop },
+  none4: { Front: Noop, Back: Noop },
+  none5: { Front: Noop, Back: Noop },
 }
 
 export const bodyMap = {
