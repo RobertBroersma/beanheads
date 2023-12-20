@@ -1,5 +1,6 @@
 {
-  "version": "0.3.3",
+  "name": "@ftrprf/bigheads-core",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -25,7 +26,6 @@
       "pre-commit": "tsdx lint"
     }
   },
-  "name": "@bigheads/core",
   "author": "Robert Broersma",
   "module": "dist/core.esm.js",
   "devDependencies": {

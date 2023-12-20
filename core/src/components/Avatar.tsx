@@ -107,14 +107,19 @@ export const hairMap = {
 
 export const facialHairMap = {
   none: Noop,
-  none2: Noop,
-  none3: Noop,
   stubble: StubbleBeard,
   mediumBeard: MediumBeard,
 }
 
+export const facialHairMapForRandomGeneration = {
+  ...facialHairMap,
+  none2: Noop,
+  none3: Noop,
+}
+
 export const clothingMap = {
-  naked: { Back: Noop, Front: Noop },
+  // disable naked option
+  // naked: { Back: Noop, Front: Noop },
   shirt: { Back: Shirt, Front: Noop },
   dressShirt: { Back: DressShirt, Front: Noop },
   vneck: { Back: VNeck, Front: Noop },
@@ -140,12 +145,16 @@ export const graphicsMap = {
 
 export const hatMap = {
   none: { Front: Noop, Back: Noop },
+  beanie: Beanie,
+  turban: Turban,
+}
+
+export const hatMapForRandomGeneration = {
+  ...hatMap,
   none2: { Front: Noop, Back: Noop },
   none3: { Front: Noop, Back: Noop },
   none4: { Front: Noop, Back: Noop },
   none5: { Front: Noop, Back: Noop },
-  beanie: Beanie,
-  turban: Turban,
 }
 
 export const bodyMap = {

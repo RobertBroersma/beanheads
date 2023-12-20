@@ -4,12 +4,12 @@ import {
   eyebrowsMap,
   mouthsMap,
   hairMap,
-  facialHairMap,
   clothingMap,
   accessoryMap,
   graphicsMap,
-  hatMap,
   bodyMap,
+  facialHairMapForRandomGeneration,
+  hatMapForRandomGeneration,
 } from '@bigheads/core'
 
 function selectRandomKey<T extends {}>(object: T) {
@@ -24,11 +24,11 @@ export function getRandomOptions() {
   const eyebrows = selectRandomKey(eyebrowsMap)
   const mouth = selectRandomKey(mouthsMap)
   const hair = selectRandomKey(hairMap)
-  const facialHair = selectRandomKey(facialHairMap)
+  const facialHair = selectRandomKey(facialHairMapForRandomGeneration)
   const clothing = selectRandomKey(clothingMap)
   const accessory = selectRandomKey(accessoryMap)
   const graphic = selectRandomKey(graphicsMap)
-  const hat = selectRandomKey(hatMap)
+  const hat = selectRandomKey(hatMapForRandomGeneration)
   const body = selectRandomKey(bodyMap)
 
   const hairColor = selectRandomKey(theme.colors.hair)
