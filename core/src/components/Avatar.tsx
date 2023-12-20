@@ -118,7 +118,8 @@ export const facialHairMapForRandomGeneration = {
 }
 
 export const clothingMap = {
-  naked: { Back: Noop, Front: Noop },
+  // disable naked option
+  // naked: { Back: Noop, Front: Noop },
   shirt: { Back: Shirt, Front: Noop },
   dressShirt: { Back: DressShirt, Front: Noop },
   vneck: { Back: VNeck, Front: Noop },
