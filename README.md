@@ -8,7 +8,7 @@ Easily generate avatars for your projects with Bean Heads. https://beanheads.rob
 
 ### Try it
 
-Just navigate to [our online playground](https://beanheads.robertbroersma.com/editor)!
+Navigate to [our online playground](https://beanheads.robertbroersma.com/editor)!
 
 ### Getting Started
 
