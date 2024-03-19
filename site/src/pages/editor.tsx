@@ -127,22 +127,22 @@ const Example = () => (
 )
   `
 
-  const imgCode = `<img src="https://bigheads.io${svgUrl}" alt="Big Head" />`
+  const imgCode = `<img src="https://bigheads.io${svgUrl}" alt="Bean Head" />`
 
   if (typeof window === 'undefined') {
-    return <SEO title="Big Head Editor" />
+    return <SEO title="Bean Head Editor" />
   }
 
   return (
     <>
-      <SEO title="Big Head Editor" />
+      <SEO title="Bean Head Editor" />
       <div className="px-4 py-8">
         <div className="flex flex-col container mx-auto">
           <h1 className="text-4xl font-semibold text-center relative flex flex-col justify-center">
             <Link to="/" className="absolute">
               <ArrowLeft className="mr-4 h-8 w-8" />
             </Link>
-            <span>Edit Big Head</span>
+            <span>Edit Bean Head</span>
             <span className="ml-auto" />
           </h1>
 

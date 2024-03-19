@@ -14,7 +14,7 @@ const RandomAvatar = () => {
   const queryString = qs.stringify(options)
 
   return (
-    <Link to={`/editor/?${queryString}`} aria-label="Big Head">
+    <Link to={`/editor/?${queryString}`} aria-label="Bean Head">
       <BigHead {...options} />
     </Link>
   )
@@ -33,31 +33,9 @@ const RandomAvatars = React.memo(
     return useMemo(
       () => (
         <>
-          {page === 1 ? (
-            <a
-              href="https://www.etsy.com/shop/StatikGraphics?ref=bigheads.io"
-              target="_blank"
-              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 pt-5 px-5 opacity-100 hover:opacity-75 transition-opacity duration-300"
-            >
-              <img
-                src="/etsy.jpg"
-                alt="Topo.ink"
-                className="rounded w-full object-contain object-top"
-                style={{ height: 240 }}
-              />
-              <h2 className="font-bold mt-3 text-lg text-center">
-                Wall Art on Etsy{' '}
-                <span className="text-sm text-gray-600 font-normal">
-                  &mdash; Sponsor
-                </span>
-              </h2>
-              <p className="text-center">High Quality Posters for Your Walls</p>
-            </a>
-          ) : (
-            <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-              <RandomAvatar />
-            </div>
-          )}
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <RandomAvatar />
+          </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
             <RandomAvatar />
           </div>
@@ -130,7 +108,9 @@ const Home = () => {
       <Hero />
       <div className="px-4">
         <div className="pt-12">
-          <h1 className="text-4xl font-semibold text-center">More Big Heads</h1>
+          <h1 className="text-4xl font-semibold text-center">
+            More Bean Heads
+          </h1>
           <p className="text-xl text-center">
             Click on any character to edit, save or embed!
           </p>
