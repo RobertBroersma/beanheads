@@ -4,10 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@bigheads/core": "0.3.3",
+    "@bigheads/core": "^0.3.3",
     "gatsby": "^2.23.7",
     "gatsby-plugin-google-analytics": "^2.3.13",
-    "gatsby-plugin-manifest": "^2.4.17",
     "gatsby-plugin-postcss": "^2.3.9",
     "gatsby-plugin-react-helmet": "^3.3.9",
     "gatsby-plugin-typescript": "^2.4.6",
