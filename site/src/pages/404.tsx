@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { BigHead } from '@bigheads/core'
+import { BeanHead } from 'beanheads'
 import { SEO } from '../components/SEO'
 
 function NotFound() {
@@ -9,7 +9,7 @@ function NotFound() {
       <SEO title="Not Found" />
       <div className="container mx-auto flex flex-col items-center h-screen justify-center">
         <div className="w-full sm:w-1/2 lg:w-1/4">
-          <BigHead
+          <BeanHead
             eyes="squint"
             eyebrows="leftLowered"
             accessory="none"

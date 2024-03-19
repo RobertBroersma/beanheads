@@ -10,7 +10,7 @@ import {
   graphicsMap,
   hatMap,
   bodyMap,
-} from '@bigheads/core'
+} from 'beanheads'
 
 function selectRandomKey<T extends {}>(object: T) {
   return (Object.keys(object) as Array<keyof typeof object>)[

@@ -23,7 +23,7 @@ import {
   hatMap,
   graphicsMap,
   theme,
-} from '@bigheads/core'
+} from 'beanheads'
 import { Download, Code, Image, ArrowLeft, RefreshCw } from 'react-feather'
 import { SEO } from '../components/SEO'
 import { getRandomOptions } from '../utils/getRandomOptions'
@@ -90,7 +90,7 @@ function Editor({ location }: { location: Location }) {
     const svgUrl = URL.createObjectURL(svgBlob)
     const downloadLink = document.createElement('a')
     downloadLink.href = svgUrl
-    downloadLink.download = 'bighead.svg'
+    downloadLink.download = 'beanhead.svg'
     downloadLink.click()
   }
 
@@ -105,10 +105,10 @@ function Editor({ location }: { location: Location }) {
     [props],
   )
 
-  const reactCode = `import { BigHead } from '@bigheads/core'
+  const reactCode = `import { BeanHead } from 'beanheads'
 
 const Example = () => (
-  <BigHead
+  <BeanHead
     ${Object.entries(props)
       .map(([key, value]) =>
         [
@@ -127,22 +127,22 @@ const Example = () => (
 )
   `
 
-  const imgCode = `<img src="https://bigheads.io${svgUrl}" alt="Big Head" />`
+  const imgCode = `<img src="https://beanheads.robertbroersma.com${svgUrl}" alt="Bean Head" />`
 
   if (typeof window === 'undefined') {
-    return <SEO title="Big Head Editor" />
+    return <SEO title="Bean Head Editor" />
   }
 
   return (
     <>
-      <SEO title="Big Head Editor" />
+      <SEO title="Bean Head Editor" />
       <div className="px-4 py-8">
         <div className="flex flex-col container mx-auto">
           <h1 className="text-4xl font-semibold text-center relative flex flex-col justify-center">
             <Link to="/" className="absolute">
               <ArrowLeft className="mr-4 h-8 w-8" />
             </Link>
-            <span>Edit Big Head</span>
+            <span>Edit Bean Head</span>
             <span className="ml-auto" />
           </h1>
 
@@ -226,11 +226,11 @@ const Example = () => (
                     {activeTab === 'react' && (
                       <div className="pt-2">
                         <SyntaxHighlighter style={atomDark}>
-                          {`yarn add @bigheads/core`}
+                          {`yarn add beanheads`}
                         </SyntaxHighlighter>
                         or
                         <SyntaxHighlighter style={atomDark}>
-                          {`npm install @bigheads/core --save`}
+                          {`npm install beanheads --save`}
                         </SyntaxHighlighter>
                         then
                         <SyntaxHighlighter

@@ -1,34 +1,34 @@
 <p align="center" >
-  <img alt="Big Heads Demo" src="demo/demo.gif" />
+  <img alt="Bean Heads Demo" src="demo/demo.gif" />
 </p>
 
-Easily generate avatars for your projects with Big Heads. https://bigheads.io
+Easily generate avatars for your projects with Bean Heads. https://beanheads.robertbroersma.com
 
 <a href="https://www.buymeacoffee.com/robertbroersma" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
 ### Try it
 
-Just navigate to [our online playground](https://bigheads.io/editor)!
+Navigate to [our online playground](https://beanheads.robertbroersma.com/editor)!
 
 ### Getting Started
 
 ```shell
-yarn add @bigheads/core
+yarn add beanheads
 ```
 
 or
 
 ```shell
-npm install @bigheads/core --save
+npm install beanheads --save
 ```
 
 then, in your app:
 
 ```jsx
-import { BigHead } from '@bigheads/core'
+import { BeanHead } from 'beanheads'
 
 const Example = () => (
-  <BigHead
+  <BeanHead
     accessory="shades"
     body="chest"
     circleColor="blue"
@@ -82,8 +82,8 @@ const Example = () => (
 
 Type of accessory
 
-| Type     | Required |
-| -------- | -------- |
+| Type                                                  | Required |
+| ----------------------------------------------------- | -------- |
 | enum('none', 'roundGlasses', 'tinyGlasses', 'shades') | No       |
 
 ---
@@ -92,8 +92,8 @@ Type of accessory
 
 Type of body
 
-| Type     | Required |
-| -------- | -------- |
+| Type                     | Required |
+| ------------------------ | -------- |
 | enum('chest', 'breasts') | No       |
 
 ---
@@ -102,8 +102,8 @@ Type of body
 
 The color of the circular background
 
-| Type     | Required |
-| -------- | -------- |
+| Type         | Required |
+| ------------ | -------- |
 | enum('blue') | No       |
 
 ---
@@ -112,8 +112,8 @@ The color of the circular background
 
 Type of cloth
 
-| Type     | Required |
-| -------- | -------- |
+| Type                                                              | Required |
+| ----------------------------------------------------------------- | -------- |
 | enum('naked', 'shirt', 'dressShirt', 'vneck', 'tankTop', 'dress') | No       |
 
 ---
@@ -122,8 +122,8 @@ Type of cloth
 
 The color of the clothes
 
-| Type     | Required |
-| -------- | -------- |
+| Type                                           | Required |
+| ---------------------------------------------- | -------- |
 | enum('white', 'blue', 'black', 'green', 'red') | No       |
 
 ---
@@ -132,8 +132,8 @@ The color of the clothes
 
 Type of eyebrows
 
-| Type     | Required |
-| -------- | -------- |
+| Type                                                           | Required |
+| -------------------------------------------------------------- | -------- |
 | enum('raised', 'leftLowered', 'serious', 'angry', 'concerned') | No       |
 
 ---
@@ -142,8 +142,8 @@ Type of eyebrows
 
 Type of eyes
 
-| Type     | Required |
-| -------- | -------- |
+| Type                                                                                           | Required |
+| ---------------------------------------------------------------------------------------------- | -------- |
 | enum('normal', 'leftTwitch', 'happy', 'content', 'squint', 'simple', 'dizzy', 'wink', 'heart') | No       |
 
 ---
@@ -152,8 +152,8 @@ Type of eyes
 
 Type of facial hair
 
-| Type     | Required |
-| -------- | -------- |
+| Type                                                     | Required |
+| -------------------------------------------------------- | -------- |
 | enum('none', 'none2', 'none3', 'stubble', 'mediumBeard') | No       |
 
 ---
@@ -162,8 +162,8 @@ Type of facial hair
 
 Type of graphic over the t-shirts
 
-| Type     | Required |
-| -------- | -------- |
+| Type                                                         | Required |
+| ------------------------------------------------------------ | -------- |
 | enum('none', 'redwood', 'gatsby', 'vue', 'react', 'graphQL') | No       |
 
 ---
@@ -172,8 +172,8 @@ Type of graphic over the t-shirts
 
 Type of hair
 
-| Type     | Required |
-| -------- | -------- |
+| Type                                                                            | Required |
+| ------------------------------------------------------------------------------- | -------- |
 | enum('none', 'long', 'bun', 'short', 'pixie', 'balding', 'buzz', 'afro', 'bob') | No       |
 
 ---
@@ -182,18 +182,18 @@ Type of hair
 
 The color of the hair
 
-| Type     | Required |
-| -------- | -------- |
+| Type                                                                | Required |
+| ------------------------------------------------------------------- | -------- |
 | enum('blonde', 'orange', 'black', 'white', 'brown', 'blue', 'pink') | No       |
 
-----
+---
 
 ### `hat`
 
 Type of hat
 
-| Type     | Required |
-| -------- | -------- |
+| Type                                                                 | Required |
+| -------------------------------------------------------------------- | -------- |
 | enum('none', 'none2', 'none3', 'none4', 'none5', 'beanie', 'turban') | No       |
 
 ---
@@ -202,9 +202,9 @@ Type of hat
 
 The color of the hat
 
-| Type     | Required |
-| -------- | -------- |
-| enum('white', 'blue', 'black', 'green', 'red') | No       |      |
+| Type                                           | Required |
+| ---------------------------------------------- | -------- |
+| enum('white', 'blue', 'black', 'green', 'red') | No       |  |
 
 ---
 
@@ -212,8 +212,8 @@ The color of the hat
 
 Show lashes
 
-| Type     | Required |
-| -------- | -------- |
+| Type                  | Required |
+| --------------------- | -------- |
 | enum('true', 'false') | No       |
 
 ---
@@ -222,8 +222,8 @@ Show lashes
 
 The color of the lips
 
-| Type     | Required |
-| -------- | -------- |
+| Type                                               | Required |
+| -------------------------------------------------- | -------- |
 | enum('red', 'purple', 'pink', 'turqoise', 'green') | No       |
 
 ---
@@ -233,8 +233,8 @@ The color of the lips
 If set to true it displays the avatar in a circle and cuts off everything below it.
 If set to false, it won't display the circle, and won't clip off any of the avatar.
 
-| Type     | Required |
-| -------- | -------- |
+| Type    | Required |
+| ------- | -------- |
 | boolean | No       |
 
 ---
@@ -243,8 +243,8 @@ If set to false, it won't display the circle, and won't clip off any of the avat
 
 If set to true the avatar will be wearing a face mask
 
-| Type     | Required |
-| -------- | -------- |
+| Type    | Required |
+| ------- | -------- |
 | boolean | No       |
 
 ---
@@ -253,8 +253,8 @@ If set to true the avatar will be wearing a face mask
 
 Type of mouth
 
-| Type     | Required |
-| -------- | -------- |
+| Type                                                                  | Required |
+| --------------------------------------------------------------------- | -------- |
 | enum('grin', 'sad', 'openSmile', 'lips', 'open', 'serious', 'tongue') | No       |
 
 ---
@@ -263,11 +263,12 @@ Type of mouth
 
 The color of the skin
 
-| Type     | Required |
-| -------- | -------- |
+| Type                                                     | Required |
+| -------------------------------------------------------- | -------- |
 | enum('light', 'yellow', 'brown', 'dark', 'red', 'black') | No       |
 
 ---
 
 # License
-I have made Big Heads icons available for you to incorporate into your products under the MIT License. Feel free to remix and re-share for personal or commercial use. I'd love attribution, but it's not required. The only thing I ask is that you not re-sell these icons.
+
+I have made Bean Heads icons available for you to incorporate into your products under the MIT License. Feel free to remix and re-share for personal or commercial use. I'd love attribution, but it's not required. The only thing I ask is that you not re-sell these icons.
