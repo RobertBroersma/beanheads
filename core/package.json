@@ -25,7 +25,7 @@
       "pre-commit": "tsdx lint"
     }
   },
-  "name": "@bigheads/core",
+  "name": "beanheads",
   "author": "Robert Broersma",
   "module": "dist/core.esm.js",
   "devDependencies": {

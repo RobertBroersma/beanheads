@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback, useMemo } from 'react'
 import qs from 'query-string'
 import { Link } from 'gatsby'
-import { BigHead } from '@bigheads/core'
+import { BeanHead } from 'beanheads'
 import { useInView } from 'react-intersection-observer'
 
 import { Hero } from '../components/Hero'
@@ -15,7 +15,7 @@ const RandomAvatar = () => {
 
   return (
     <Link to={`/editor/?${queryString}`} aria-label="Bean Head">
-      <BigHead {...options} />
+      <BeanHead {...options} />
     </Link>
   )
 }

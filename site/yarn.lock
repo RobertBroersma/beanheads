@@ -1122,11 +1122,6 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
-"@bigheads/core@^0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@bigheads/core/-/core-0.3.3.tgz#158b1ba6c53417841ee30c5df62a5209ba0ee9b0"
-  integrity sha512-lu+TbgFR3IRPQR539td47935SwujzT4OQJdqReksVPJ9f3Tn80kpemIsdmO4yYm9FWW7eAGV+a5bFKC4/1jpLA==
-
 "@endemolshinegroup/cosmiconfig-typescript-loader@3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@endemolshinegroup/cosmiconfig-typescript-loader/-/cosmiconfig-typescript-loader-3.0.2.tgz#eea4635828dde372838b0909693ebd9aafeec22d"
@@ -2711,6 +2706,11 @@ batch@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/batch/-/batch-0.6.1.tgz#dc34314f4e679318093fc760272525f94bf25c16"
   integrity sha512-x+VAiMRL6UPkx+kudNvxTl6hB2XNNCG2r+7wixVfIYwu/2HKRXimwQyaumLjMveWvT2Hkd/cAJw+QBMfJ/EKVw==
+
+beanheads@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/beanheads/-/beanheads-0.3.3.tgz#ea8093e2a1cc66ec7aa1a79eed7f6210dcb23f5c"
+  integrity sha512-xcL8FA02+5mIsonwXxnXqd11eXR534VgXCusogBn0t5JXNckaD1UgH0C65wq5h1osK8bbv+2IYpNQM9OplVFVQ==
 
 better-opn@^2.0.0:
   version "2.1.1"

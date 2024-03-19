@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react'
-import { BigHead } from '@bigheads/core'
+import { BeanHead } from 'beanheads'
 
 export function SlotMachine({
   interval = 300,
@@ -23,5 +23,5 @@ export function SlotMachine({
     return () => clearTimeout(timeout)
   }, [rerender, interval])
 
-  return <BigHead />
+  return <BeanHead />
 }

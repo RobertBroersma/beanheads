@@ -13,22 +13,22 @@ Navigate to [our online playground](https://beanheads.robertbroersma.com/editor)
 ### Getting Started
 
 ```shell
-yarn add @bigheads/core
+yarn add beanheads
 ```
 
 or
 
 ```shell
-npm install @bigheads/core --save
+npm install beanheads --save
 ```
 
 then, in your app:
 
 ```jsx
-import { BigHead } from '@bigheads/core'
+import { BeanHead } from 'beanheads'
 
 const Example = () => (
-  <BigHead
+  <BeanHead
     accessory="shades"
     body="chest"
     circleColor="blue"

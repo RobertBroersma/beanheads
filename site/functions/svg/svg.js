@@ -3,7 +3,7 @@ const RDS = require('react-dom/server')
 const seedrandom = require('seedrandom')
 
 const {
-  BigHead,
+  BeanHead,
   theme,
   eyesMap,
   eyebrowsMap,
@@ -15,7 +15,7 @@ const {
   graphicsMap,
   hatMap,
   bodyMap,
-} = require('@bigheads/core')
+} = require('beanheads')
 
 function getRandomOptions(rng) {
   function selectRandomKey(object) {
@@ -92,7 +92,7 @@ exports.handler = async event => {
     }
 
     const avatarString = RDS.renderToString(
-      React.createElement(BigHead, mergedProps),
+      React.createElement(BeanHead, mergedProps),
     )
 
     return {
