@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Big Heads',
+    title: 'Bean Heads',
     titleTemplate: '%s · Easily generate avatars for your projects',
     description:
       'Combine expressions, clothing, hair styles and colors into billions of different unique characters.',
