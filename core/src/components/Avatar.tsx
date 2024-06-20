@@ -62,6 +62,7 @@ import { VNeck } from './clothing/VNeck'
 import { GraphQLGraphic } from './clothingGraphic/GraphQL'
 import { Tongue } from './mouths/Tongue'
 import { DressShirt } from './clothing/DressShirt'
+import { JavaScriptGraphic } from './clothingGraphic/JavaScript'
 
 export const eyesMap = {
   normal: NormalEyes,
@@ -136,6 +137,7 @@ export const graphicsMap = {
   vue: VueGraphics,
   react: ReactGraphic,
   graphQL: GraphQLGraphic,
+  javaScript: JavaScriptGraphic,
 }
 
 export const hatMap = {

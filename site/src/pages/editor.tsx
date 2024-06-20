@@ -54,6 +54,7 @@ const settingMaps: SettingMaps = {
   lashes: { true: 'true', false: 'false' },
 }
 
+console.log({ graphicsMap })
 function Editor({ location }: { location: Location }) {
   const svgRef = useRef<SVGSVGElement>(null)
   const props = useMemo<AvatarProps>(
